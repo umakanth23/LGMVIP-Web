@@ -1,120 +1,106 @@
+body{
+	
+	background-color: rgb(243, 177, 123);
 
-body {
-  background: rgb(24, 24, 22);
-  color: rgb(111, 233, 223);
-  font-family: Lato, sans-serif;
 }
-.container {
-  display: block;
-  width: 400px;
-  margin: 100px auto 0;
+#container{
+	width: 1080px;
+	height:600px;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)); 
+    background-color: chocolate;
+	margin: 20px auto;	
+    border-radius: 20px;
 }
-ul {
-  margin: 0;
-  padding: 0;
+#calculator{
+	width: 320px;
+	height: 520px;
+	background-color: #91c9ee;
+	margin: 0 auto;
+	top: 37px;
+	position: relative;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-li * {
-  float: left;
+#result{
+	height: 120px;
 }
-li, h3 {
-  clear:both;
-  list-style:none;
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 25px;
+	color: #161313;
 }
-input, button {
-  outline: none;
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
 }
-button {
-  background: none;
-  border: 0px;
-  color: rgb(240, 72, 117);
-  font-size: 15px;
-  width: 60px;
-  margin: 10px 0 0;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
+#keyboard{
+	height: 400px;
 }
-button:hover {
-  color: rgb(240, 72, 117);
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 20%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
 }
-/* Heading */
-h3,
-label[for='new-task'] {
-  color: rgb(240, 72, 117);
-  font-weight: 700;
-  font-size: 15px;
-  border-bottom: 2px solid #333;
-  padding: 30px 0 10px;
-  margin: 0;
-  text-transform: uppercase;
+.number, .empty{
+	background-color: #f3aa4b;
 }
-input[type="text"] {
-  margin: 0;
-  font-size: 18px;
-  line-height: 18px;
-  height: 18px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  background: #fff;
-  border-radius: 6px;
-  font-family: Lato, sans-serif;
-  color: #888;
+.number, .operator{
+	cursor: pointer;
 }
-input[type="text"]:focus {
-  color: #333;
+.operator:active, .number:active{
+	font-size: 13px;
 }
-
-/* New Task */
-label[for='new-task'] {
-  display: block;
-  margin: 0 0 20px;
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
 }
-input#new-task {
-  float: left;
-  width: 318px;
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #f08080;
 }
-p > button:hover {
-  color: #0FC57C;
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #7d93e0;
 }
-
-/* Task list */
-li {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #20b2aa;
 }
-li > input[type="checkbox"] {
-  margin: 0 10px;
-  position: relative;
-  top: 15px;
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #ffa500 ;
 }
-li > label {
-  font-size: 18px;
-  line-height: 40px;
-  width: 237px;
-  padding: 0 0 0 11px;
-}
-li >  input[type="text"] {
-  width: 226px;
-}
-li > .delete:hover {
-  color: #CF2323;
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #9477af;
 }
 
-/* Completed */
-#completed-tasks label {
-  text-decoration: line-through;
-  color: #888;
+.copyright p {
+    margin-top: 1.2rem;
+	color: #ffffff;
+	text-align: center;
+    font-size: .9rem;
 }
 
-/* Edit Task */
-ul li input[type=text] {
-  display:none;
+.copyright h5 {
+	margin-bottom: 1.2rem;
+	margin-top: 1rem;
+	text-align: center;
+    font-size: 1.1rem;
 }
+.btm
+{
+    color: #11110f;
+    font-size:30px;
+    margin-left:40%;
 
-ul li.editMode input[type=text] {
-  display:block;
-}
-
-ul li.editMode label {
-  display:none;
 }
